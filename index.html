@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
     <h1>Filip Arghir - CS 499 ePortfolio</h1>
 
     <p>
-        This is my CS 499 Computer Science Capstone ePortfolio. This page will show my main artifact,
+        This is my CS 499 Computer Science Capstone ePortfolio. This page shows my main artifact,
         code review, enhancements, and final self-assessment.
     </p>
 
@@ -73,7 +74,7 @@
 
     <hr>
 
-   <h2 id="code-review">Code Review</h2>
+    <h2 id="code-review">Code Review</h2>
 
     <p>
         My code review focused on my original CS 330 OpenGL scene project before the capstone enhancements.
@@ -90,8 +91,19 @@
     <h2 id="software-design">Software Design and Engineering</h2>
 
     <p>
-        This section will explain my first enhancement. I improved parts of the OpenGL project to make the
-        code cleaner, easier to maintain, and easier to work with.
+        For my first enhancement, I improved my CS 330 OpenGL scene from a software design and engineering perspective.
+        I focused on making the project cleaner, easier to maintain, and easier to run on different machines.
+    </p>
+
+    <p>
+        Some of the main changes included fixing texture cleanup, improving material lookup logic, adding relative
+        texture paths, adding a helper function for loading scene textures, adding texture slot checks, removing
+        duplicate mesh loading, and adding named constants.
+    </p>
+
+    <p>
+        This enhancement helped improve the project behind the scenes. It made the code easier to understand,
+        easier to debug, and easier to expand later without changing the main visual purpose of the scene.
     </p>
 
     <p>
@@ -103,8 +115,21 @@
     <h2 id="algorithms">Algorithms and Data Structures</h2>
 
     <p>
-        This section will explain my second enhancement. I organized static scene objects with a struct,
-        enum, vector, and render loop.
+        For my second enhancement, I improved how the static scene objects were organized and rendered.
+        I added a MeshType enum, a scene object struct, a sceneObjects vector, BuildSceneObjectList,
+        and RenderSceneObject.
+    </p>
+
+    <p>
+        Static scene objects are now stored in a vector and rendered through a loop instead of being handled
+        through repeated hardcoded function calls. This made the rendering system more organized and easier
+        to expand later.
+    </p>
+
+    <p>
+        I kept the vehicle rendering functions separate because each car is made from multiple pieces with
+        different transformations, textures, and materials. Trying to force the vehicles into one simple
+        scene object would have made the project more complicated instead of cleaner.
     </p>
 
     <p>
@@ -116,8 +141,21 @@
     <h2 id="databases">Databases</h2>
 
     <p>
-        This section will explain my third enhancement. I moved static scene object data into a CSV file
-        and loaded that data into the program.
+        For my third enhancement, I moved static scene object data into a structured CSV file called SceneObjects.csv.
+        The CSV file works as a flat-file database where each row represents one scene object and each column stores
+        a field for that object.
+    </p>
+
+    <p>
+        The CSV stores information such as mesh type, scale, rotation, position, texture tag, material tag,
+        color, and UV scale. I added a loader that reads the CSV file at runtime, validates the data,
+        creates scene objects, and uses a fallback list if the CSV file cannot be loaded.
+    </p>
+
+    <p>
+        This enhancement showed me that database concepts can apply to more than traditional web applications
+        or business systems. In this project, the scene still looks the same, but the objects are stored and
+        loaded in a cleaner way.
     </p>
 
     <p>
@@ -129,12 +167,16 @@
     <h2 id="artifacts">Artifacts and Files</h2>
 
     <p>
-        This section will include links to my original artifact, enhanced artifact, narratives, and other files.
+        This section includes the main files for my CS 499 ePortfolio. My main artifact is my CS 330
+        Computational Graphics and Visualization OpenGL 3D scene project. The original artifact shows the
+        project before the capstone enhancements, while the enhanced artifact includes my updates for
+        software design, algorithms and data structures, and databases.
     </p>
 
     <ul>
         <li><a href="#">Original Artifact</a></li>
         <li><a href="#">Enhanced Artifact</a></li>
+        <li><a href="#">Professional Self-Assessment Document</a></li>
         <li><a href="#">Software Design Narrative</a></li>
         <li><a href="#">Algorithms and Data Structures Narrative</a></li>
         <li><a href="#">Databases Narrative</a></li>
@@ -154,3 +196,4 @@
 
 </body>
 </html>
+```
