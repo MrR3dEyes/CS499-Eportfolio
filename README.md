@@ -2,6 +2,8 @@
 CS 499 ePortfolio
 
 
+These are other projects Ive worked on while studying at SNHU 
+
 https://github.com/MrR3dEyes/Arghir_303-GAM-SNHU.git
 
 https://github.com/MangoMiles/GAM_305DreamCowboy.git
