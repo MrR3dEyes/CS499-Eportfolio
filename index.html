@@ -1,199 +1,152 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Filip Arghir - CS 499 ePortfolio</title>
 </head>
-
 <body>
-
-    <h1>Filip Arghir - CS 499 ePortfolio</h1>
-
-    <p>
-        This is my CS 499 Computer Science Capstone ePortfolio. This page shows my main artifact,
-        code review, enhancements, and final self-assessment.
-    </p>
-
-    <hr>
-
-    <h2>Navigation</h2>
-    <ul>
-        <li><a href="#self-assessment">Professional Self-Assessment</a></li>
-        <li><a href="#code-review">Code Review</a></li>
-        <li><a href="#software-design">Software Design and Engineering</a></li>
-        <li><a href="#algorithms">Algorithms and Data Structures</a></li>
-        <li><a href="#databases">Databases</a></li>
-        <li><a href="#artifacts">Artifacts and Files</a></li>
-        <li><a href="#contact">Contact and Links</a></li>
-    </ul>
-
-    <hr>
-
-    <h2 id="self-assessment">Professional Self-Assessment</h2>
-
-    <p>
-        My career plans have stayed the same since I graduated high school; they have become more specific as I have gone through the Computer Science program here at SNHU. When I finished high school, I wanted to be a game developer or a software developer. As I have grown and learned through these courses, especially with graphics and visualization, I have focused more on programming, game development, technical art, and visual systems. I still enjoy working on hardware as well as troubleshooting, especially since that is my current job as a service and diagnostic technician. My long-term goal is to be more focused on the creative and technical side of software.
-    </p>
-
-    <p>
-        Going through the Computer Science program has helped me understand that computer science is not just about getting code to run. It is about writing code that is organized, maintainable, useful, secure, and easier to improve later. My coursework has helped me build skills in software engineering, algorithms, data structures, databases, security, and full-stack development. These areas all connect together because real projects require more than one skill. A project needs to work but also needs to be understandable, stable, and useful for the user or serve a purpose.
-    </p>
-
-    <p>
-        One of the biggest things I have learned is how important communication is in computer science. The code review helped me explain what my original project did, the issues I found, and what improvements I planned to make. The milestone narratives and journals also helped me explain not only what I changed but why those changes mattered. This matters in a professional setting because developers need to explain their work to teammates, managers, instructors, and maybe people who will not understand every technical detail. Being able to communicate those choices clearly is something I have improved throughout this course.
-    </p>
-
-    <p>
-        My ePortfolio focuses on my CS 330 Computational Graphics and Visualization OpenGL scene project. I chose this artifact because it connects heavily with my career goals in graphics programming, game development, and becoming a technical artist. The project is not just a basic program that displays something. It is a visual project in which code controls what appears on screen. The scene has two vehicles, a lamp post, a sky background, a tree, a grass island, textures, lighting, materials, and camera interaction. This makes it a strong artifact as it shows both visual and technical problem-solving.
-    </p>
-
-    <p>
-        For the Software Design and Engineering enhancement, I improved the project by making my code cleaner, more portable, and easier to maintain. I fixed issues with textures, improved material lookup logic, added relative texture paths, added a helper function for loading scene textures, added texture slot checks, removed duplicate mesh loading, and added named constants. These changes may not completely change what the user sees visually, but they have improved how the project works behind the scenes. This showed me that meaningful software improvements do not always have to be huge new features. Fixing bugs, reducing repeated code, improving portability, and making the project easier to maintain can be just as important.
-    </p>
-
-    <p>
-        For the Algorithms and Data Structures enhancement, I improved how the static scene objects were organized and rendered. I added a MeshType enum, a scene object struct, a sceneObjects vector, BuildSceneObjectList, and RenderSceneObject. Static scene objects are now stored in a vector and rendered through a loop instead of being handled through repeated hardcoded function calls. I kept the vehicle rendering functions separate because each car is made from multiple pieces with different transformations, textures, and materials. Trying to force the vehicles into one simple scene object would have made the project more complicated instead of cleaner. This helped me understand that algorithms and data structures are not only about sorting or searching. They can also be used to organize real project data and make software easier to expand later.
-    </p>
-
-    <p>
-        For the Databases enhancement, I moved static scene object data into a structured CSV file called SceneObjects.csv. The CSV file works as a flat-file database where each row represents one scene object, and each column stores a specific field for that object. These fields include information such as mesh type, scale, rotation, position, texture tag, material tag, color, and UV scale. I also added a loader that reads the CSV file at runtime, validates the data, creates scene objects, and uses a fallback list if the CSV file cannot be loaded. This showed me that database concepts can apply to more than traditional web applications or business systems. I felt very proud applying these concepts to a graphics project because the scene still looks the same, but the objects are stored and loaded better.
-    </p>
-
-    <p>
-        The security mindset outcome also connects to my enhancements. In the Software Design and Engineering enhancement, I improved error handling and reduced issues with missing or invalid data causing silent problems. For the Databases enhancement, the CSV loader validates data before using it and falls back to default scene objects if the file is missing or has issues. This helped me understand that software should not only work when everything goes correctly. It should also handle problems in a predictable way and give useful warnings instead of failing unexpectedly.
-    </p>
-
-    <p>
-        My work experience has also helped shape how I view computer science. As a service and diagnostic technician, I work with hardware, troubleshooting, system issues, and customer problems. This has helped me develop a practical mindset when working on technical problems. I have learned that it is important to break problems down, test changes, and understand why something is not working rather than just trying random fixes. Whether I am diagnosing a computer issue or improving an OpenGL project, the process still involves identifying the problem, testing possible solutions, and making the final result more reliable.
-    </p>
-
-    <p>
-        Overall, this ePortfolio shows my growth as a computer science student and as someone who is heavily interested in technical art, graphics programming, and game development. I want my ePortfolio to show more than just programming assignments. I want it to show that I can build visual technical projects, review my work, make design choices, improve existing code, and explain those improvements. The three enhancements all build on the same OpenGL scene, but each one shows a different area of computer science. Together, they demonstrate software design, engineering, algorithms and data structures, database organization, professional communication, and a strong security-based mindset. This portfolio represents the type of work I want to continue building after graduation, which is work that is both visual and technical, where code directly affects the user's experience.
-    </p>
-
-    <hr>
-
-    <h2 id="code-review">Code Review</h2>
-
-    <p>
-        My code review focused on my original CS 330 OpenGL scene project before the capstone enhancements.
-        In the video, I reviewed the original functionality of the scene and discussed the improvements I planned
-        for software design and engineering, algorithms and data structures, and databases.
-    </p>
-
-    <p>
-        <a href="https://youtu.be/sDKheLTBp7w">View Code Review Video</a>
-    </p>
-
-    <hr>
-
-    <h2 id="software-design">Software Design and Engineering</h2>
-
-    <p>
-        For my first enhancement, I improved my CS 330 OpenGL scene from a software design and engineering perspective.
-        I focused on making the project cleaner, easier to maintain, and easier to run on different machines.
-    </p>
-
-    <p>
-        Some of the main changes included fixing texture cleanup, improving material lookup logic, adding relative
-        texture paths, adding a helper function for loading scene textures, adding texture slot checks, removing
-        duplicate mesh loading, and adding named constants.
-    </p>
-
-    <p>
-        This enhancement helped improve the project behind the scenes. It made the code easier to understand,
-        easier to debug, and easier to expand later without changing the main visual purpose of the scene.
-    </p>
-
-    <p>
-        <a href="#">View Software Design Narrative</a>
-    </p>
-
-    <hr>
-
-    <h2 id="algorithms">Algorithms and Data Structures</h2>
-
-    <p>
-        For my second enhancement, I improved how the static scene objects were organized and rendered.
-        I added a MeshType enum, a scene object struct, a sceneObjects vector, BuildSceneObjectList,
-        and RenderSceneObject.
-    </p>
-
-    <p>
-        Static scene objects are now stored in a vector and rendered through a loop instead of being handled
-        through repeated hardcoded function calls. This made the rendering system more organized and easier
-        to expand later.
-    </p>
-
-    <p>
-        I kept the vehicle rendering functions separate because each car is made from multiple pieces with
-        different transformations, textures, and materials. Trying to force the vehicles into one simple
-        scene object would have made the project more complicated instead of cleaner.
-    </p>
-
-    <p>
-        <a href="#">View Algorithms and Data Structures Narrative</a>
-    </p>
-
-    <hr>
-
-    <h2 id="databases">Databases</h2>
-
-    <p>
-        For my third enhancement, I moved static scene object data into a structured CSV file called SceneObjects.csv.
-        The CSV file works as a flat-file database where each row represents one scene object and each column stores
-        a field for that object.
-    </p>
-
-    <p>
-        The CSV stores information such as mesh type, scale, rotation, position, texture tag, material tag,
-        color, and UV scale. I added a loader that reads the CSV file at runtime, validates the data,
-        creates scene objects, and uses a fallback list if the CSV file cannot be loaded.
-    </p>
-
-    <p>
-        This enhancement showed me that database concepts can apply to more than traditional web applications
-        or business systems. In this project, the scene still looks the same, but the objects are stored and
-        loaded in a cleaner way.
-    </p>
-
-    <p>
-        <a href="#">View Databases Narrative</a>
-    </p>
-
-    <hr>
-
-    <h2 id="artifacts">Artifacts and Files</h2>
-
-    <p>
-        This section includes the main files for my CS 499 ePortfolio. My main artifact is my CS 330
-        Computational Graphics and Visualization OpenGL 3D scene project. The original artifact shows the
-        project before the capstone enhancements, while the enhanced artifact includes my updates for
-        software design, algorithms and data structures, and databases.
-    </p>
-
-    <ul>
-        <li><a href="#">Original Artifact</a></li>
-        <li><a href="#">Enhanced Artifact</a></li>
-        <li><a href="#">Professional Self-Assessment Document</a></li>
-        <li><a href="#">Software Design Narrative</a></li>
-        <li><a href="#">Algorithms and Data Structures Narrative</a></li>
-        <li><a href="#">Databases Narrative</a></li>
-    </ul>
-
-    <hr>
-
-    <h2 id="contact">Contact and Links</h2>
-
-    <p>
-        GitHub: <a href="https://github.com/MrR3dEyes">https://github.com/MrR3dEyes</a>
-    </p>
-
-    <p>
-        Email: filiparg2000@gmail.com
-    </p>
-
+<h1>Filip Arghir - CS 499 ePortfolio</h1>
+<p>
+    This is my CS 499 Computer Science Capstone ePortfolio. This page shows my main artifact,
+    code review, enhancements, and final self-assessment.
+</p>
+<hr>
+<h2>Navigation</h2>
+<ul>
+    <li><a href="#self-assessment">Professional Self-Assessment</a></li>
+    <li><a href="#code-review">Code Review</a></li>
+    <li><a href="#software-design">Software Design and Engineering</a></li>
+    <li><a href="#algorithms">Algorithms and Data Structures</a></li>
+    <li><a href="#databases">Databases</a></li>
+    <li><a href="#artifacts">Artifacts and Files</a></li>
+    <li><a href="#contact">Contact and Links</a></li>
+</ul>
+<hr>
+<h2 id="self-assessment">Professional Self-Assessment</h2>
+<p>
+    My career plans have stayed the same since I graduated high school; they have become more specific as I have gone through the Computer Science program here at SNHU. When I finished high school, I wanted to be a game developer or a software developer. As I have grown and learned through these courses, especially with graphics and visualization, I have focused more on programming, game development, technical art, and visual systems. I still enjoy working on hardware as well as troubleshooting, especially since that is my current job as a service and diagnostic technician. My long-term goal is to be more focused on the creative and technical side of software.
+</p>
+<p>
+    Going through the Computer Science program has helped me understand that computer science is not just about getting code to run. It is about writing code that is organized, maintainable, useful, secure, and easier to improve later. My coursework has helped me build skills in software engineering, algorithms, data structures, databases, security, and full-stack development. These areas all connect together because real projects require more than one skill. A project needs to work but also needs to be understandable, stable, and useful for the user or serve a purpose.
+</p>
+<p>
+    One of the biggest things I have learned is how important communication is in computer science. The code review helped me explain what my original project did, the issues I found, and what improvements I planned to make. The milestone narratives and journals also helped me explain not only what I changed but why those changes mattered. This matters in a professional setting because developers need to explain their work to teammates, managers, instructors, and maybe people who will not understand every technical detail. Being able to communicate those choices clearly is something I have improved throughout this course.
+</p>
+<p>
+    My ePortfolio focuses on my CS 330 Computational Graphics and Visualization OpenGL scene project. I chose this artifact because it connects heavily with my career goals in graphics programming, game development, and becoming a technical artist. The project is not just a basic program that displays something. It is a visual project in which code controls what appears on screen. The scene has two vehicles, a lamp post, a sky background, a tree, a grass island, textures, lighting, materials, and camera interaction. This makes it a strong artifact as it shows both visual and technical problem-solving.
+</p>
+<p>
+    For the Software Design and Engineering enhancement, I improved the project by making my code cleaner, more portable, and easier to maintain. I fixed issues with textures, improved material lookup logic, added relative texture paths, added a helper function for loading scene textures, added texture slot checks, removed duplicate mesh loading, and added named constants. These changes may not completely change what the user sees visually, but they have improved how the project works behind the scenes. This showed me that meaningful software improvements do not always have to be huge new features. Fixing bugs, reducing repeated code, improving portability, and making the project easier to maintain can be just as important.
+</p>
+<p>
+    For the Algorithms and Data Structures enhancement, I improved how the static scene objects were organized and rendered. I added a MeshType enum, a scene object struct, a sceneObjects vector, BuildSceneObjectList, and RenderSceneObject. Static scene objects are now stored in a vector and rendered through a loop instead of being handled through repeated hardcoded function calls. I kept the vehicle rendering functions separate because each car is made from multiple pieces with different transformations, textures, and materials. Trying to force the vehicles into one simple scene object would have made the project more complicated instead of cleaner. This helped me understand that algorithms and data structures are not only about sorting or searching. They can also be used to organize real project data and make software easier to expand later.
+</p>
+<p>
+    For the Databases enhancement, I moved static scene object data into a structured CSV file called SceneObjects.csv. The CSV file works as a flat-file database where each row represents one scene object, and each column stores a specific field for that object. These fields include information such as mesh type, scale, rotation, position, texture tag, material tag, color, and UV scale. I also added a loader that reads the CSV file at runtime, validates the data, creates scene objects, and uses a fallback list if the CSV file cannot be loaded. This showed me that database concepts can apply to more than traditional web applications or business systems. I felt very proud applying these concepts to a graphics project because the scene still looks the same, but the objects are stored and loaded better.
+</p>
+<p>
+    The security mindset outcome also connects to my enhancements. In the Software Design and Engineering enhancement, I improved error handling and reduced issues with missing or invalid data causing silent problems. For the Databases enhancement, the CSV loader validates data before using it and falls back to default scene objects if the file is missing or has issues. This helped me understand that software should not only work when everything goes correctly. It should also handle problems in a predictable way and give useful warnings instead of failing unexpectedly.
+</p>
+<p>
+    My work experience has also helped shape how I view computer science. As a service and diagnostic technician, I work with hardware, troubleshooting, system issues, and customer problems. This has helped me develop a practical mindset when working on technical problems. I have learned that it is important to break problems down, test changes, and understand why something is not working rather than just trying random fixes. Whether I am diagnosing a computer issue or improving an OpenGL project, the process still involves identifying the problem, testing possible solutions, and making the final result more reliable.
+</p>
+<p>
+    Overall, this ePortfolio shows my growth as a computer science student and as someone who is heavily interested in technical art, graphics programming, and game development. I want my ePortfolio to show more than just programming assignments. I want it to show that I can build visual technical projects, review my work, make design choices, improve existing code, and explain those improvements. The three enhancements all build on the same OpenGL scene, but each one shows a different area of computer science. Together, they demonstrate software design, engineering, algorithms and data structures, database organization, professional communication, and a strong security-based mindset. This portfolio represents the type of work I want to continue building after graduation, which is work that is both visual and technical, where code directly affects the user's experience.
+</p>
+<hr>
+<h2 id="code-review">Code Review</h2>
+<p>
+    My code review focused on my original CS 330 OpenGL scene project before the capstone enhancements.
+    In the video, I reviewed the original functionality of the scene and discussed the improvements I planned
+    for software design and engineering, algorithms and data structures, and databases.
+</p>
+<p>
+    <a href="https://youtu.be/sDKheLTBp7w">View Code Review Video</a>
+</p>
+<hr>
+<h2 id="software-design">Software Design and Engineering</h2>
+<p>
+    For my first enhancement, I improved my CS 330 OpenGL scene from a software design and engineering perspective.
+    I focused on making the project cleaner, easier to maintain, and easier to run on different machines.
+</p>
+<p>
+    Some of the main changes included fixing texture cleanup, improving material lookup logic, adding relative
+    texture paths, adding a helper function for loading scene textures, adding texture slot checks, removing
+    duplicate mesh loading, and adding named constants.
+</p>
+<p>
+    This enhancement helped improve the project behind the scenes. It made the code easier to understand,
+    easier to debug, and easier to expand later without changing the main visual purpose of the scene.
+</p>
+<p>
+    <a href="Module%20Three%20Assignment.pdf">View Software Design Narrative</a>
+</p>
+<hr>
+<h2 id="algorithms">Algorithms and Data Structures</h2>
+<p>
+    For my second enhancement, I improved how the static scene objects were organized and rendered.
+    I added a MeshType enum, a scene object struct, a sceneObjects vector, BuildSceneObjectList,
+    and RenderSceneObject.
+</p>
+<p>
+    Static scene objects are now stored in a vector and rendered through a loop instead of being handled
+    through repeated hardcoded function calls. This made the rendering system more organized and easier
+    to expand later.
+</p>
+<p>
+    I kept the vehicle rendering functions separate because each car is made from multiple pieces with
+    different transformations, textures, and materials. Trying to force the vehicles into one simple
+    scene object would have made the project more complicated instead of cleaner.
+</p>
+<p>
+    <a href="Module%204%20Assignment.pdf">View Algorithms and Data Structures Narrative</a>
+</p>
+<hr>
+<h2 id="databases">Databases</h2>
+<p>
+    For my third enhancement, I moved static scene object data into a structured CSV file called SceneObjects.csv.
+    The CSV file works as a flat-file database where each row represents one scene object and each column stores
+    a field for that object.
+</p>
+<p>
+    The CSV stores information such as mesh type, scale, rotation, position, texture tag, material tag,
+    color, and UV scale. I added a loader that reads the CSV file at runtime, validates the data,
+    creates scene objects, and uses a fallback list if the CSV file cannot be loaded.
+</p>
+<p>
+    This enhancement showed me that database concepts can apply to more than traditional web applications
+    or business systems. In this project, the scene still looks the same, but the objects are stored and
+    loaded in a cleaner way.
+</p>
+<p>
+    <a href="Module%20Five%20Assignment.pdf">View Databases Narrative</a>
+</p>
+<hr>
+<h2 id="artifacts">Artifacts and Files</h2>
+<p>
+    This section includes the main files for my CS 499 ePortfolio. My main artifact is my CS 330
+    Computational Graphics and Visualization OpenGL 3D scene project. The original artifact shows the
+    project before the capstone enhancements, while the enhanced artifact includes my updates for
+    software design, algorithms and data structures, and databases.
+</p>
+<ul>
+    <li><a href="Self%20Assesment.pdf">Professional Self-Assessment Document</a></li>
+    <li><a href="Module%20Two%20Assignment.pdf">Module Two Assignment</a></li>
+    <li><a href="Module%20Three%20Assignment.pdf">Software Design and Engineering Narrative</a></li>
+    <li><a href="Module%204%20Assignment.pdf">Algorithms and Data Structures Narrative</a></li>
+    <li><a href="Module%20Five%20Assignment.pdf">Databases Narrative</a></li>
+    <li><a href="7-1_FinalProject-Original.zip">Original Artifact</a></li>
+    <li><a href="7-1_FinalProjectMilestone-Two-Enhanced.zip">Software Design Enhancement Artifact</a></li>
+    <li><a href="7-1_FinalProjectMilestone-%20Three-Enhanced.zip">Algorithms and Data Structures Enhancement Artifact</a></li>
+    <li><a href="7-1_FinalProjectMilestone-%20Four-Enhanced.zip">Databases Enhancement Artifact</a></li>
+</ul>
+<hr>
+<h2 id="contact">Contact and Links</h2>
+<p>
+    GitHub: <a href="https://github.com/MrR3dEyes">https://github.com/MrR3dEyes</a>
+</p>
+<p>
+    Email: filiparg2000@gmail.com
+</p>
 </body>
 </html>
-```
