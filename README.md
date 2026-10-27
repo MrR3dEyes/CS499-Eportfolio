@@ -38,6 +38,4 @@ https://github.com/Mr-Blu3Eyes/CS-250-SNHU.git
 
 https://github.com/Angel402/GameJam36.git
 
-https://github.com/occ-cs150/fall-23-Mr-Blu3Eyes.git
 
-https://github.com/occ-cs150/cs150-f23-Mr-Blu3Eyes.git
